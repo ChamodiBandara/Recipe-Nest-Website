@@ -1,0 +1,459 @@
+/* Home.css */
+
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+* {
+    font-family: 'K2D', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'K2D';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color:#290118;
+    color: white;
+    padding: 0;
+  }
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+  background-color: #290118; 
+  color: white;
+  }
+.logo {
+    font-family: 'Lily Script One', cursive !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  .nav-icons {
+    display: flex;
+    gap: 2rem;
+  }
+  .icon-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .icon-button:hover {
+    color: #f0c040; 
+  }
+  
+/* Navigation Links */
+.nav 
+{
+    
+    background-color: white; 
+    border-top: 3px solid #e0e0e0; 
+    
+
+}
+  .nav-links {
+    display: flex;
+    justify-content: center; /* Inline-flex to center items horizontally */
+    gap: 15rem; /* Add spacing between links */
+    list-style: none;
+    padding:   0.5rem 0;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .nav-links li a {
+    color:#4a154b;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .nav-links li a:hover {
+    text-decoration: underline; /* Optional hover effect */
+  }
+ 
+  /* Hero Section Styles */
+  .hero {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-image {
+    width: 1000px;
+    height: 500px;
+  }
+ 
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    font-family: 'K2D';
+    background-color: rgba(0, 0, 0, 0.5); /* Optional for better contrast */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  /* Search Bar Styles */
+  .search-bar {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+  }
+  
+  .search-input {
+    width: 60%;
+    padding: 10px;
+    margin-right: 0.5rem;
+    border: 3px solid#66023C;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .search-button {
+    font-family:'K2D';
+    padding: 12px 40px;
+    background-color: #66023C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .search-button:hover {
+    background-color: #faea0a;
+  }
+  .quick-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Align items horizontally to the center */
+  
+  }
+  
+  
+  .quick-button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #66023C;
+    cursor: pointer;
+    border-radius: 4px;
+    color:white; 
+  }
+  .quick-button:hover {
+    background-color: #faea0a;
+  }
+  
+  /* Recipe Categories Section */
+  .recipe-categories {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  
+  .recipe-categories h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .category {
+    cursor: pointer;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  .category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(248, 246, 246, 0.2);
+  }
+  /* Image styling */
+
+/* Light white effect on hover */
+.category:hover .category-image {
+  filter: brightness(0.5); /* Increases brightness on hover (light white effect) */
+}
+  
+  .category-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .category h3 {
+    margin-top: 0.5rem;
+  }
+  /* explore more section */
+  .explore-more {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .explore-more-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .explore-more-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 65px;
+  }
+  
+  .explore-item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .explore-item:hover {
+    transform: translate(0, -15px) scale(1.05);
+
+    box-shadow: 10px 10px 15px rgba(148, 143, 143, 0.2);
+  }
+  
+  .explore-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .explore-item:hover .explore-image {
+    box-shadow: 0px 10px 20px rgba(15, 14, 14, 0.3);
+  }
+  
+  .explore-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+  }
+
+  /* Popular Now Section */
+.popular-now {
+  padding: 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 20px;
+}
+
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);;
+  gap: 20px;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.popular-item {
+  text-align: center;
+}
+
+.popular-image {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  transition: filter 0.3s ease; /* Add transition for smooth effect */
+}
+
+.popular-image:hover {
+  filter: brightness(0.5); /* Increase brightness on hover */
+}
+
+.popular-title {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color:black;
+}
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f7e9f0;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-title {
+  
+  font-family: 'Lily Script One', cursive !important;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #66023C;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Cursive", sans-serif;
+}
+
+.about-description {
+  font-size: 18px;
+  font-weight:bold;
+  color: #66023C;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.learn-more-button {
+
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #66023C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #faea0a;
+}
+
+.about-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+.holiday-sweet {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.holiday-sweet .section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color:black;
+}
+
+.holiday-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.holiday-sweet-image {
+  max-width: 100%; /* Ensures responsiveness */
+  width:1000px; /* Scales the image to fit nicely within the section */
+  max-height: 400px; /* Limits the height for a balanced appearance */
+  border-radius: 10px; /* Slight rounding of corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for a polished look */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.holiday-sweet-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+/* Find More Recipes Section */
+.find-recipes {
+  background-color: #f4eff4; /* Light background color */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 30px auto;
+  width: 100%; /* Centers the section */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.find-recipes-title {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 3000px;
+  color:black; /* Dark purple color */
+  margin-bottom: 15px;
+}
+
+.find-recipes-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 10px;
+}
+
+.find-recipes-input {
+  width: 50%;
+  padding: 10px;
+  border: 3px solid #4c2a4c;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.find-recipes-button {
+  
+  background-color: #ffef3b; /* Bright yellow button */
+  color: black; 
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.find-recipes-button:hover {
+  background-color: #fdd835; /* Slightly darker yellow on hover */
+}
