@@ -1,7 +1,8 @@
 // Home.js
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css'; // Updated path for Home.css
-import Footer from '../styles/footer.js';
+import Footer from '../Js files/footer.js';
+import Header from '../Js files/header.js';
 import image1 from '../images/image1.jpg';
 import indian from '../images/indian.jpg';
 import Mexican from '../images/mexican-tacos.jpg';
@@ -76,34 +77,9 @@ const popularItems = [
 
   return (
     <div className="home">
-        
-      {/* Header Section */}
-      <header className="header">
-      <div className="top-header">
-        <div className="logo">Recipe Nest</div>
-          <div className="nav-icons">
-            <button className="icon-button">
-              <i className="fas fa-search"></i>
-            </button>
-            <button className="icon-button">
-              <i className="fas fa-bookmark"></i>
-            </button>
-            <button className="icon-button">
-              <i className="fas fa-user"></i>
-            </button>
-          </div>
-          </div>
-          {/* Navigation bar */}
-          <nav className="nav">
-        <ul className="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recipe</a></li>
-            <li><a href="#">Popular</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </nav>
-      </header>
-
+{/* {Header section with navigation bar} */}
+      <Header/>
+  
      {/* Hero Section with Typing Effect */}
      <section className="hero">
         <img
@@ -210,7 +186,18 @@ const popularItems = [
       />
     </div>
   </div>
+  
 </section>
+{/* More Categories Section */}
+<section className="more-categories-section">
+        <h2>More Categories</h2>
+        <div className="categories-container">
+          <div className="category-item"><img src={require('../images/morecategories/soup.jpg')} alt="Soup" /></div>
+          <div className="category-item"><img src={require('../images/morecategories/noodles.jpg')} alt="Noodles" /></div>
+          <div className="category-item"><img src={require('../images/morecategories/drinks.jpg')} alt="Drink" /></div>
+          <div className="category-item"><img src={require('../images/morecategories/sea.jpg')} alt="Seafood" /></div>
+        </div>
+      </section>
   {/* Bake The Holiday Sweet Section */}
   <section className="holiday-sweet">
         <h2 className="section-title">Bake The Holiday Sweet</h2>

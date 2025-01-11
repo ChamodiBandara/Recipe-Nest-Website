@@ -23,69 +23,6 @@ body {
     color: inherit;
   }
   
-  /* Header Styles */
-  .header {
-    background-color:#290118;
-    color: white;
-    padding: 0;
-  }
-  .top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75rem 2rem;
-  background-color: #290118; 
-  color: white;
-  }
-.logo {
-    font-family: 'Lily Script One', cursive !important;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-  }
-  .nav-icons {
-    display: flex;
-    gap: 2rem;
-  }
-  .icon-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  .icon-button:hover {
-    color: #f0c040; 
-  }
-  
-/* Navigation Links */
-.nav 
-{
-    
-    background-color: white; 
-    border-top: 3px solid #e0e0e0; 
-    
-
-}
-  .nav-links {
-    display: flex;
-    justify-content: center; /* Inline-flex to center items horizontally */
-    gap: 15rem; /* Add spacing between links */
-    list-style: none;
-    padding:   0.5rem 0;
-    margin: 0;
-    align-items: center;
-  }
-  
-  .nav-links li a {
-    color:#4a154b;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .nav-links li a:hover {
-    text-decoration: underline; /* Optional hover effect */
-  }
- 
   /* Hero Section Styles */
   .hero {
     text-align: center;
@@ -375,6 +312,46 @@ body {
   max-width: 400px;
   border-radius: 10px;
 }
+/* more categories section */
+.more-categories-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.more-categories-section h2 {
+  
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.category-item {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.category-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-item:hover {
+  transform: scale(1.1);
+}
+
+/* holiday sweet image section */
 .holiday-sweet {
   text-align: center;
   margin-top: 40px;
@@ -382,8 +359,9 @@ body {
 }
 
 .holiday-sweet .section-title {
-  font-size: 24px;
-  font-weight: bold;
+  font-family:K2D;
+  font-size: 45px;
+  font-weight: bolder;
   margin-bottom: 20px;
   color:black;
 }
