@@ -59,33 +59,52 @@ function About() {
     <button className="sign-up-button">Sign Up</button>
   </div>
 </section>
-{/* What we offer */}
-<section className="what-we-offer-section">
-  <h2 className="offer-title">What We Offer?</h2>
-  <div className="offer-container">
-    
-    <div className="offer-image">
-      <img src={chef} 
-      alt="Smiling Chef" 
-      className="offer-image-content" />
+{/* what we offer */}
+<section class="what-we-offer">
+    <h2 class="offer-title">What We Offer ?</h2>
+    <div class="offer-container">
+      <div class="offer-left">
+        <img src={chef} 
+        alt="Chef presenting recipes" 
+        class="offer-image"/>
+      </div>
+      <div class="offer-right">
+        <div class="offer-item">
+          <h3>A Vast Collection of Recipes</h3>
+          <p>From quick and easy meals to gourmet delights, our store features a diverse range of recipes to suit every taste and occasion.</p>
+        </div>
+        <div class="offer-item">
+          <h3>Community Contributions</h3>
+          <p>Got a recipe idea? Share it with the world! Recipe Nest encourages users to submit their own creations and become a part of our growing community.</p>
+        </div>
+        <div class="offer-item">
+          <h3>Cooking Made Easy</h3>
+          <p>Our step-by-step guides, tips, and cooking hacks ensure that anyone can recreate the magic of great dishes in their own kitchen.</p>
+        </div>
+        <div class="offer-item">
+          <h3>Healthy Choices</h3>
+          <p>Explore recipes tailored to various dietary needs and preferences, including vegan, gluten-free, and low-calorie options.</p>
+        </div>
+      </div>
     </div>
-
-   
-    <div className="offer-description">
-      <h3>A Vast Collection of Recipes</h3>
-      <p>From quick and easy meals to gourmet delights, our store features a diverse range of recipes to suit every taste and occasion.</p>
-      <h3>Community Contributions</h3>
-      <p>Got a recipe idea? Share it with the world! Recipe Nest encourages users to submit their own creations and become a part of our growing community.</p>
-      <h3>Cooking Made Easy</h3>
-      <p>Our step-by-step guides, tips, and cooking hacks ensure that anyone can recreate the magic of great dishes in their own kitchen.</p>
-      <h3>Healthy Choices</h3>
-      <p>Explore recipes tailored to various dietary needs and preferences, including vegan, gluten-free, and low-calorie options.</p>
-    </div>
+  </section>
+  <section className="recipe-call-to-action">
+        <div className="recipe-call-to-action-container">
+          <h2 className="recipe-call-to-action-text">Bring your recipes to the nest</h2>
+          <button className="add-recipes-button">Add Recipes</button>
+        </div>
+      </section>
+    {/* search recipes container */}
+      <section className="find-recipes">
+  <h2 className="find-recipes-title">Find More Recipes</h2>
+  <div className="find-recipes-container">
+    <input
+      type="text"
+      className="find-recipes-input"
+      placeholder="Search for recipes..."
+    />
+    <button className="find-recipes-button">Search</button>
   </div>
-</section>
-<section className="cta-section">
-  <h2 className="cta-title">Bring your recipes to the nest</h2>
-  <button className="cta-button">Add Recipes</button>
 </section>
 
       
