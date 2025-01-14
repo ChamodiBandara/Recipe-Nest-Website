@@ -1,0 +1,59 @@
+/* Dinner Page Styles */
+.thai-page { /* Center the page horizontally */
+    font-family: 'K2D', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+     /* Set a maximum width for the page */
+    }
+    .thai-page h1{
+      text-align: center;
+      color:#290118;
+      font-size: 36px;
+    }
+    
+    .recipe-list {
+      display: flex;
+      width:80%;
+      margin:auto;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute recipes evenly */
+      gap: 20px; /* Add spacing between recipe cards */
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .recipe-card {
+      width: calc(33% - 20px); /* Calculate card width based on three columns */
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      text-align: center;
+      padding: 15px;
+    }
+    
+    .recipe-card:hover {
+      transform: scale(1.02); /* Add a slight hover effect */
+    }
+    .recipe-card:hover.recipe-card img{
+      filter: brightness(0.5); 
+    }  
+    .recipe-card img {
+      width: 80%;
+      height: 450px; /* Set a fixed height for recipe images */
+      object-fit: cover; /* Crop images to fit within the container */
+      border-radius: 4px; /* Match the card's border radius */
+      margin-bottom: 10px;
+    }
+    
+    .recipe-card h3 {
+     
+      
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: black;
+    }
+    
+    

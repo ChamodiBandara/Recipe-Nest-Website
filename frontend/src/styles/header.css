@@ -2,6 +2,7 @@
     background-color:#290118;
     color: white;
     padding: 0;
+    margin-bottom: 10px;
   }
   .top-header {
     display: flex;
@@ -35,10 +36,8 @@
 /* Navigation Links */
 .nav 
 {
-    
-    background-color: white; 
-    border-top: 3px solid #e0e0e0; 
-    
+  margin-bottom:5px;
+   
 
 }
   .nav-links {
@@ -52,7 +51,8 @@
   }
   
   .nav-links li a {
-    color:#4a154b;
+    color:white;
+    font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
   }

@@ -50,7 +50,7 @@ function Home() {
 //popular now category
 const popularItems = [
   {
-    image: require('../images/popular/Honey corn bread.jpg'), // Replace with actual paths
+    image: require('../images/popular/Honey corn bread.jpg'), //path of the image
     title: 'Honey Corn Bread',
   },
   {
