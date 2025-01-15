@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Left Section */}
+        {/* left */}
         <div className="footer-left">
           <h3>FOLLOW US</h3>
           <div className="footer-icons">
@@ -18,7 +18,7 @@ const Footer = () => {
           <p>&copy; RecipeNest All Rights Reserved</p>
         </div>
 
-        {/* Center Section */}
+        {/* Mid*/}
         <div className="footer-center">
           <a href="#top" className="back-to-top">
             <i className="fas fa-arrow-up"></i>
@@ -26,7 +26,7 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Right Section */}
+        {/* right */}
         <div className="footer-right">
           <ul>
             <li><a href="#">Search Recipes</a></li>

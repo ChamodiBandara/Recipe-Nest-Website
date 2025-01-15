@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import Header from '../Js files/header.js';
 import Footer from '../Js files/footer.js';
 import '../Recipecom/Dinner.css'; 
@@ -8,39 +9,42 @@ import Hawallian from '../images/categories/Hawaiian chicken salad.jpg';
 import MexicanRice from '../images/categories/Mexican Rice.jpg';
 import sphagetti from '../images/categories/sphagetti.jpg';
 import Noodles from '../images/categories/Chicken Teriyaki Noodles.jpg';
-import { Link,useNavigate } from 'react-router-dom';
 
 function Dinner() {
-  const navigate = useNavigate(); // Optional for programmatic navigation
-
-
+  const navigate = useNavigate();
+  
 
   const dinnerRecipes = [
-    { image: cs, title: 'Cajun Sausage and Rice',},
-    { image: FriedRice, title:'Chicken Fried Rice', },
-    { image: Hawallian, title: 'Hawaiian Chicken Salad ',},
-    { image: MexicanRice, title:'Mexican Rice', },
-    { image: Noodles, title: 'Chicken Teriyaki Noodles ',},
-    { image: sphagetti, title:'Sphagetti and Meat Balls', }
+    { image: cs, title: 'Cajun Sausage and Rice', path: '/cajun-sausage' },
+    { image: FriedRice, title: 'Chicken Fried Rice', path: '/chicken-fried-rice' },
+    { image: Hawallian, title: 'Hawaiian Chicken Salad', path: '/hawaiian-salad' },
+    { image: MexicanRice, title: 'Mexican Rice', path: '/mexican-rice' },
+    { image: Noodles, title: 'Chicken Teriyaki Noodles', path: '/teriyaki-noodles' },
+    { image: sphagetti, title: 'Spaghetti and Meatballs', path: '/spaghetti-meatballs' }
   ];
+
+  
 
   return (
     <div className="dinner-page">
-        <Header/>
-        <section>
-      <h1>Dinner Recipes</h1>
-      <div className="recipe-list">
-        {dinnerRecipes.map((recipe, index) => (
-          <Link key={index} to={`/recipes/${recipe.title.toLowerCase().replace(/\s/g, '-')}`}>
-          <div className="recipe-card">
-            <img src={recipe.image} alt={recipe.title} />
-            <h3>{recipe.title}</h3>
-          </div>
-          </Link>
-        ))}
-      </div>
+      <Header />
+      <section>
+        <h1>Dinner Recipes</h1>
+        <div className="recipe-list">
+          {dinnerRecipes.map((recipe, index) => (
+            <div
+              className="recipe-card"
+              key={index}
+              onClick={() => navigate(recipe.path)}
+            
+            >
+              <img src={recipe.image} alt={recipe.title} />
+              <h3>{recipe.title}</h3>
+            </div>
+          ))}
+        </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

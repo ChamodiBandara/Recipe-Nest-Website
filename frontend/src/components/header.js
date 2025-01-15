@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/header.css";
 
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-{/* Header Section */}
+import { Link } from "react-router-dom"; 
+
    const Header = () => {
     return (
    <header className="header">
@@ -33,8 +33,6 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
          </button>
        </div>
        </div>
-       {/* Navigation bar */}
-       {/* Navigation bar */}
     
    </header>
     );

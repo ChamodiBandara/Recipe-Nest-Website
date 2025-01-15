@@ -15,15 +15,14 @@ import drink from '../images/Recipes/drink.jpg';
 
 
 function Recipe() {
-  // navigation of dinner
   const navigate = useNavigate(); 
   const handleCategoryClick = (category) => {
-    navigate(`/${category.title.toLowerCase()}`); // Dynamic route based on category title
+    navigate(`/${category.title.toLowerCase()}`); 
   };
 
 
   
-// Recipe categories data
+//array
 const categories = [
   { image: dinner, title: 'Dinner' },
   { image: breakfast, title: 'Breakfast' },
@@ -54,6 +53,7 @@ const categories = [
       </div>
       </section>
       <section>
+
       {/* Recipes categories */}
       <section className="recipe-categories">
       <h2>Recipe Categories</h2>
@@ -72,6 +72,7 @@ const categories = [
       </div>
     </section>
       </section>
+      
           {/* Subscription Section */}
       <section className="subscription-section">
         <h2>Want More Recipes From Recipe Nest?</h2>

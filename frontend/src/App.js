@@ -12,10 +12,12 @@ import Thai from './Recipecom/Thai';
 import Indian from './Recipecom/Indian';
 import Mexican from './Recipecom/Mexican';
 import Drink from './Recipecom/Drink';
-import Salad from './Recipecom/Salad'
-import FriedRice from './components/recipes/Friedrice'; 
+import Salad from './Recipecom/Salad';
+import FriedRice from './Recipepages/FriedRice';
 
-import './App.css'; // Import App.css from the root folder
+
+
+import './App.css'; 
 import './index.css';
 function App() {
   return (
@@ -36,7 +38,8 @@ function App() {
         <Route path="/mexican" element={<Mexican />} />
         <Route path="/drink" element={<Drink />} />
         <Route path="/salad" element={<Salad />} />
-        <Route path="/recipes/chicken-fried-rice" element={<FriedRice />} />
+        <Route path="/chicken-fried-rice" element={<FriedRice />} />
+
        
       
       </Routes>

@@ -12,7 +12,7 @@ import Noodles from '../images/categories/Chicken Teriyaki Noodles.jpg';
 
 
 function Breakfast() {
-  // Array of Breakfast data)
+ 
   const breakfastRecipes = [
     { image: cs, title: 'Cajun Sausage and Rice',},
     { image: FriedRice, title:'Chicken Fried Rice', },

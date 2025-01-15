@@ -1,8 +1,8 @@
-// Home.js
+
 import React, { useState, useEffect } from 'react';
-import '../styles/Home.css'; // Updated path for Home.css
-import Footer from '../Js files/footer.js';
-import Header from '../Js files/header.js';
+import '../styles/Home.css'; 
+import Footer from './footer.js';
+import Header from './header.js';
 import image1 from '../images/image1.jpg';
 import indian from '../images/indian.jpg';
 import Mexican from '../images/mexican-tacos.jpg';
@@ -16,29 +16,29 @@ import instantPot from '../images/instantpot.jpg';
 import holidaySweetImage from '../images/mergedlast.jpg';
 
 function Home() {
-      // State for typing effect
+     
   const [typedText, setTypedText] = useState('');
   const slogan = "Yaour Gateway to Delicious Creations!";
 
-  // Typing effect logic
+
   useEffect(() => {
     let i = 0;
     const typingInterval = 100; 
     const typeWriter = () => {
       if (i < slogan.length) {
-        setTypedText((prevText) => prevText + slogan.charAt(i)); // Append the next character
+        setTypedText((prevText) => prevText + slogan.charAt(i)); 
         i++;
       } else {
-        clearInterval(intervalId); // Clear interval when done typing
+        clearInterval(intervalId); 
       }
     };
 
-    const intervalId = setInterval(typeWriter, typingInterval); // Set interval to type each letter at the defined time
+    const intervalId = setInterval(typeWriter, typingInterval); 
 
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    return () => clearInterval(intervalId); 
 
   }, []);
-  // Explore more categories
+ 
   const exploreCategories = [
     { label: 'Quick & Easy', image: quickEasy },
     { label: 'Dinner', image: dinner },
@@ -47,10 +47,10 @@ function Home() {
     { label: 'Celebrations', image: celebrations },
     { label: 'Instant Pot', image: instantPot },
   ];
-//popular now category
+
 const popularItems = [
   {
-    image: require('../images/popular/Honey corn bread.jpg'), //path of the image
+    image: require('../images/popular/Honey corn bread.jpg'), 
     title: 'Honey Corn Bread',
   },
   {
@@ -77,10 +77,9 @@ const popularItems = [
 
   return (
     <div className="home">
-{/* {Header section with navigation bar} */}
       <Header/>
   
-     {/* Hero Section with Typing Effect */}
+    
      <section className="hero">
         <img
           src={image1}
@@ -92,7 +91,7 @@ const popularItems = [
         </div>
       </section>
 
-      {/* Search Bar Section */}
+      
       <section className="search-bar">
         <input
           type="text"
@@ -108,7 +107,7 @@ const popularItems = [
         </div>
       </section>
 
-      {/* Recipe Categories Section */}
+  
       <section className="recipe-categories">
         <h2>Travel the World with Your Taste Buds!</h2>
         <div className="categories">
@@ -138,7 +137,9 @@ const popularItems = [
           </div>
         </div>
       </section>
-       {/* Explore More Section */}
+
+
+     
        <section className="explore-more">
         <h2 className="explore-more-title">Explore More</h2>
         <div className="explore-more-container">
@@ -153,7 +154,7 @@ const popularItems = [
           ))}
         </div>
       </section>
-        {/* Popular Now Section  */}
+       
          <section className="popular-now">
         <h2 className="section-title">Popular Now</h2>
         <div className="popular-grid">
@@ -165,10 +166,10 @@ const popularItems = [
           ))}
         </div>
       </section>
-      {/* About Section */}
+     
 <section className="about-section">
   <div className="about-container">
-    {/* Left Text Section */}
+   
     <div className="about-text">
       <h2 className="about-title">Recipe Nest</h2>
       <p className="about-description">
@@ -177,7 +178,6 @@ const popularItems = [
       <button className="learn-more-button">Learn More</button>
     </div>
 
-    {/* Right Image Section */}
     <div className="about-image-container">
       <img
         src={require('../images/about.jpg')}
@@ -188,7 +188,7 @@ const popularItems = [
   </div>
   
 </section>
-{/* More Categories Section */}
+
 <section className="more-categories-section">
         <h2>More Categories</h2>
         <div className="categories-container">
@@ -198,7 +198,7 @@ const popularItems = [
           <div className="category-item"><img src={require('../images/morecategories/sea.jpg')} alt="Seafood" /></div>
         </div>
       </section>
-  {/* Bake The Holiday Sweet Section */}
+
   <section className="holiday-sweet">
         <h2 className="section-title">Bake The Holiday Sweet</h2>
         <div className="holiday-image">
