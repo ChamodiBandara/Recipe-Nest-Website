@@ -20,28 +20,39 @@
   
   h1 {
     font-size: 2.5rem;
-    color: #444;
+    color:white;
+    font-weight:bolder;
     margin-bottom: 15px;
     text-align: center;
   }
-  
-  
-  .rating {
+  .topic-bar{
+    background-color:#290118;
+    width:100%;
+
+  }
+  .icon-bar2 {
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    gap: 50px;
+    margin-bottom: 10px;
   }
   
-  .rating .filled-star {
-    color: #ffc107;
-    font-size: 1.5rem;
+  .icon-button2 {
+    background: #e7e2e2; 
+    border: none;
+    border-radius: 5px;
+    padding: 20px 40px;
+    cursor: pointer;
   }
   
-  .rating .empty-star {
-    color: #dcdcdc;
-    font-size: 1.5rem;
+  .icon-button2:hover {
+    background: #d1bed5; /* Darker purple on hover */
   }
   
+  .icon-button2 i {
+    font-size: 20px;
+    color:#290118; /* Icon color */
+  }
   
   .recipe-details img {
     display: block;
@@ -81,50 +92,13 @@
     text-align:center;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-weight:550;
-    .action-buttons {
-        text-align: center;
-        margin: 20px 0;
-      }
-      
-      .download-button {
-        background-color: #4caf50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      
-      .download-button:hover {
-        background-color: #45a049;
-      }
-      .recipe-icons {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-      }
-      
-      .recipe-icons .icon {
-        font-size: 1.5rem;
-        margin: 0 10px;
-        cursor: pointer;
-        color: #6c757d;
-        transition: color 0.3s ease;
-      }
-      
-      .recipe-icons .icon:hover {
-        color: #444;
-      }
-      
-      
+    font-weight:550;    
 }
   
   .ingredients h2,
   .directions h2 {
     font-size: 1.8rem;
-    color: #444;
+    color:black;
     margin-bottom: 10px;
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
@@ -163,4 +137,80 @@
       justify-content: center;
     }
   }
+
+  .review-container{
+    width:100%;
+    background-color:#ede7ee;
+    margin:auto;
+    padding:20px;
+    align-items:center;
+    border-radius: 5px;
+  }
+  h3{
+    font-size:2rem;
+    color:black;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h4{
+    font-size:1.2rem;
+    color:black;
+    margin-left:100px;
+  }
+  .review-bar{
+    display: flex;
+    margin-top: 10px;
+  
+  }
+  .text-section{
+padding:160px;
+margin:auto;
+width:80%;
+height:300px;
+border:none;
+align-items: center;
+margin-bottom: 10px;
+
+  }
+
+  .text-section.placeholder{
+    color:#2f2c2c;
+    align-items: center;
+  }
+  .Cancel-button{
+    
+    padding:3px 20px;
+    
+    font-size: 0.8rem;
+    background-color:rgb(200, 200, 177); 
+    color:black;
+    border: 0.01 #ece5e5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    margin-left:500px;
+    border-radius: 3px;
+  
+
+  }
+.Cancel-button:hover
+{
+  background-color:#968998;
+}
+.Submit-button{
+  padding:3px 20px;
+  font-size: 0.8rem;
+  background-color:rgb(200, 200, 177); 
+  color:black;
+  border: 0.01 #ece5e5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+  border-radius: 3px;
+
+}
+.Submit-button:hover
+{
+  background-color:#968998;
+}
   

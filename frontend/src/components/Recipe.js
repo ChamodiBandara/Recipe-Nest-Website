@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Recipe.css';
 import { useNavigate } from 'react-router-dom';
-import Header from '../Js files/header.js';
-import Footer from '../Js files/footer.js';
+import Header from '../components/header';
+import Footer from '../components/footer';
 import dinner from '../images/Recipes/dinner.jpg';
 import breakfast from '../images/Recipes/breakfast.jpg';
 import lunch from '../images/Recipes/lunch.jpg';

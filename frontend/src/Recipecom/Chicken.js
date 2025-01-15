@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Js files/header.js';
-import Footer from '../Js files/footer.js';
+import Header from '../components/header.js';
+import Footer from '../components/footer.js';
 import '../Recipecom/Chicken.css'; 
 import cs from '../images/categories/Cajun sausage and rice.jpg';
 import FriedRice from '../images/categories/chicken fried rice.jpg';

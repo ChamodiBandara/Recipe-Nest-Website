@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/About.css'; 
-import Header from '../Js files/header.js';
-import Footer from '../Js files/footer.js';
+import Header from './header.js';
+import Footer from './footer.js';
 import chef from '../images/About images/chef-smiling.jpg';
 
 
@@ -94,7 +94,7 @@ function About() {
           <button className="add-recipes-button">Add Recipes</button>
         </div>
       </section>
-    {/* search recipes  */}
+    
       <section className="find-recipes">
   <h2 className="find-recipes-title">Find More Recipes</h2>
   <div className="find-recipes-container">
