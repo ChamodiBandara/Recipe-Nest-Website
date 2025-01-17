@@ -14,11 +14,15 @@ import Mexican from './Recipecom/Mexican';
 import Drink from './Recipecom/Drink';
 import Salad from './Recipecom/Salad';
 import FriedRice from './Recipepages/FriedRice';
-
-
+import Noodles from './Recipepages/Noodles';
+import MexicanRice from './Recipepages/MexicanRice';
+import Hawaiian from './Recipepages/Hawaiin';
+import Pizza from './Recipepages/pizza';
+import MeatLoaf from './Recipepages/Meatloaf';
 
 import './App.css'; 
 import './index.css';
+
 function App() {
   return (
     <Router>
@@ -39,6 +43,11 @@ function App() {
         <Route path="/drink" element={<Drink />} />
         <Route path="/salad" element={<Salad />} />
         <Route path="/chicken-fried-rice" element={<FriedRice />} />
+        <Route path="/hawaiian-chicken-salad" element={<Hawaiian/>}/>
+        <Route path="/meatloaf" element={<MeatLoaf/>}/>
+        <Route path="/chicken-pizza" element={<Pizza/>}/>
+        <Route path="/mexican-rice" element={<MexicanRice/>}/>
+        <Route path="/chicken-teriyaki-noodles" element={<Noodles/>}/>
 
        
       

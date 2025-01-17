@@ -5,7 +5,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import '../Recipepages/Recipepage.css';
 
-function ChickenFriedRice() {
+function Noodles() {
   const recipeRef = useRef(); 
 
 
@@ -15,7 +15,7 @@ function ChickenFriedRice() {
       <Header />
       <section className="recipe-details" ref={recipeRef}>
        <div className="topic-bar"> 
-        <h1>Chicken Fried Rice</h1>
+        <h1>Chicken Teriyaki Noodles</h1>
         </div>
         <div className="icon-bar2">
     <button className="icon-button2" title="Save">
@@ -32,7 +32,7 @@ function ChickenFriedRice() {
     </button>
         </div>
         <img
-          src={require('../images/categories/chicken fried rice.jpg')}
+          src={require('../images/categories/Chicken Teriyaki Noodles.jpg')}
           alt="Chicken Fried Rice"
         />
         <div className='Food-description'>
@@ -91,7 +91,7 @@ function ChickenFriedRice() {
         <section className='review-bg'>
   <div className='review-container'>
           
-            <h3>Chicken Fried Rice</h3>
+            <h3>Chicken Teriyaki Noodles</h3>
            <h4> LEAVE A REPLY </h4>
            <div className= 'slogan'>Your email address will not be published.Required fields are marked*</div>
           <div className='slogan2'>Made it? Leave a review </div>
@@ -128,4 +128,4 @@ function ChickenFriedRice() {
   );
 }
 
-export default ChickenFriedRice;
+export default Noodles;

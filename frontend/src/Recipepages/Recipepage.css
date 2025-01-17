@@ -46,18 +46,18 @@
   }
   
   .icon-button2:hover {
-    background: #d1bed5; /* Darker purple on hover */
+    background: #d1bed5; 
   }
   
   .icon-button2 i {
     font-size: 20px;
-    color:#290118; /* Icon color */
+    color:#290118; 
   }
   
   .recipe-details img {
     display: block;
-    width: 60%;
-    height:500px;
+    width: 600px;
+    height:700px;
     margin: auto;
     border-radius: 8px;
   }
@@ -111,7 +111,7 @@
   }
   
   .ingredients ul li {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 8px;
   }
   
@@ -123,7 +123,7 @@
   }
   
   .directions ol li {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
   }
   
@@ -137,14 +137,25 @@
       justify-content: center;
     }
   }
+  .review-bg
+  {
+    width:100%;
+    background-color: #cbc9cb;
+    padding:20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
 
   .review-container{
-    width:100%;
-    background-color:#ede7ee;
+    width:60%;
+    background-color:white;
     margin:auto;
     padding:20px;
     align-items:center;
-    border-radius: 5px;
+    margin-top: 10px;
+
+    border-color:solid#290118;
+    margin-top: 10px;
   }
   h3{
     font-size:2rem;
@@ -155,62 +166,88 @@
   h4{
     font-size:1.2rem;
     color:black;
-    margin-left:100px;
+    margin-bottom:10px;
+    
   }
-  .review-bar{
-    display: flex;
+  .slogan{
+    font-size:1rem;
+    color:black;
+  
+  }
+  .slogan2{
+    font-size:1rem;
+    color:black;
+    font-weight:bold;
+    margin-bottom: 10px;
+
+  }
+  
+  .review-bar1{
+  
+    margin-top: 10px;
+  
+  
+  }
+  .review-bar2{
+  
     margin-top: 10px;
   
   }
-  .text-section{
-padding:160px;
+  .review-bar3{
+  
+    margin-top: 10px;
+  
+  }
+
+  .comment{
+padding:50px;
 margin:auto;
-width:80%;
-height:300px;
-border:none;
+width:100%;
+height: 20px;
+border:1;
 align-items: center;
 margin-bottom: 10px;
 
-  }
 
-  .text-section.placeholder{
-    color:#2f2c2c;
+  }
+  .Name{
+    padding:20px;
+    margin:auto;
+    width:100%;
+    height: 20px;
+    border:1;
     align-items: center;
-  }
-  .Cancel-button{
+    margin-bottom: 10px;
     
-    padding:3px 20px;
     
-    font-size: 0.8rem;
-    background-color:rgb(200, 200, 177); 
-    color:black;
-    border: 0.01 #ece5e5;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 10px;
-    margin-left:500px;
-    border-radius: 3px;
-  
+      }
+      .Email{
+        padding:20px;
+        margin:auto;
+        width:100%;
+        height: 20px;
+        border:1;
+        align-items: center;
+        margin-bottom: 10px;
+        
+          }
 
-  }
-.Cancel-button:hover
-{
-  background-color:#968998;
-}
+
+
+
 .Submit-button{
-  padding:3px 20px;
-  font-size: 0.8rem;
-  background-color:rgb(200, 200, 177); 
-  color:black;
-  border: 0.01 #ece5e5;
+  padding:5px 20px;
+  font-size: 1rem;
+  background-color:black; 
+  color:white;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 10px;
-  border-radius: 3px;
+  transition: 0.3s ease;
+  margin-left:650px;
+  
 
 }
 .Submit-button:hover
 {
-  background-color:#968998;
+  background-color:#858383f1;
 }
   

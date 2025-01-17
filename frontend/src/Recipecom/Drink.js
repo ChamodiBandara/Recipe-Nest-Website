@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
-import '../Recipecom/Drink.css'; 
+import '../Recipecom/Recipe.css'; 
 import cs from '../images/categories/Cajun sausage and rice.jpg';
 import FriedRice from '../images/categories/chicken fried rice.jpg';
 import Hawallian from '../images/categories/Hawaiian chicken salad.jpg';
@@ -23,7 +23,7 @@ function Drink() {
   ];
 
   return (
-    <div className="drink-page">
+    <div className="Recipe-page">
         <Header/>
         <section>
       <h1>Juice Recipes</h1>

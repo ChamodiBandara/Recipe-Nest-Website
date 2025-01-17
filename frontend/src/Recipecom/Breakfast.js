@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
-import '../Recipecom/Breakfast.css'; 
+import '../Recipecom/Recipe.css'; 
 import cs from '../images/categories/Cajun sausage and rice.jpg';
 import FriedRice from '../images/categories/chicken fried rice.jpg';
 import Hawallian from '../images/categories/Hawaiian chicken salad.jpg';
@@ -23,7 +23,7 @@ function Breakfast() {
   ];
 
   return (
-    <div className="breakfast-page">
+    <div className="Recipe-page">
         <Header/>
         <section>
       <h1>Breakfast Recipes</h1>

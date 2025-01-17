@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
-import '../Recipecom/Mexican.css'; 
+import '../Recipecom/Recipe.css'; 
 import cs from '../images/categories/Cajun sausage and rice.jpg';
 import FriedRice from '../images/categories/chicken fried rice.jpg';
 import Hawallian from '../images/categories/Hawaiian chicken salad.jpg';
@@ -23,7 +23,7 @@ function Mexican() {
   ];
 
   return (
-    <div className="mexican-page">
+    <div className="Recipe-page">
         <Header/>
         <section>
       <h1>Mexican Recipes</h1>

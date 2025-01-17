@@ -23,7 +23,7 @@ function Chicken() {
   ];
 
   return (
-    <div className="chicken-page">
+    <div className="Recipe-page">
         <Header/>
         <section>
       <h1>Chicken Recipes</h1>

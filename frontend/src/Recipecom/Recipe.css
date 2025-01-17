@@ -1,13 +1,12 @@
-
-.thai-page { 
+.Recipe-page { 
     font-family: 'K2D', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
-     
+    
     }
-    .thai-page h1{
+    .Recipe-page h1{
       text-align: center;
       color:#290118;
       font-size: 36px;

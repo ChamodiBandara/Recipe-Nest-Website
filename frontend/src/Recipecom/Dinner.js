@@ -2,12 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
-import '../Recipecom/Dinner.css'; 
-import cs from '../images/categories/Cajun sausage and rice.jpg';
+import '../Recipecom/Recipe.css'; 
+import MeatLoaf from '../images/categories/meatloaf.jpg';
 import FriedRice from '../images/categories/chicken fried rice.jpg';
-import Hawallian from '../images/categories/Hawaiian chicken salad.jpg';
+import Hawaiian from '../images/categories/Hawaiian chicken salad.jpg';
 import MexicanRice from '../images/categories/Mexican Rice.jpg';
-import sphagetti from '../images/categories/sphagetti.jpg';
+import Pizza from '../images/categories/Chicken pizza.jpg';
 import Noodles from '../images/categories/Chicken Teriyaki Noodles.jpg';
 
 function Dinner() {
@@ -15,18 +15,18 @@ function Dinner() {
   
 
   const dinnerRecipes = [
-    { image: cs, title: 'Cajun Sausage and Rice', path: '/cajun-sausage' },
+    { image: MeatLoaf, title: 'MeatLoaf', path: '/MeatLoaf' },
     { image: FriedRice, title: 'Chicken Fried Rice', path: '/chicken-fried-rice' },
-    { image: Hawallian, title: 'Hawaiian Chicken Salad', path: '/hawaiian-salad' },
+    { image: Hawaiian, title: 'Hawaiian Chicken Salad', path: '/hawaiian-chicken-salad' },
     { image: MexicanRice, title: 'Mexican Rice', path: '/mexican-rice' },
-    { image: Noodles, title: 'Chicken Teriyaki Noodles', path: '/teriyaki-noodles' },
-    { image: sphagetti, title: 'Spaghetti and Meatballs', path: '/spaghetti-meatballs' }
+    { image: Noodles, title: 'Chicken Teriyaki Noodles', path: '/chicken-teriyaki-noodles' },
+    { image: Pizza, title: 'Chicken Pizza', path: '/chicken-pizza' }
   ];
 
   
 
   return (
-    <div className="dinner-page">
+    <div className="Recipe-page">
       <Header />
       <section>
         <h1>Dinner Recipes</h1>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
-import '../Recipecom/Thai.css'; 
+import '../Recipecom/Recipe.css'; 
 import cs from '../images/categories/Cajun sausage and rice.jpg';
 import FriedRice from '../images/categories/chicken fried rice.jpg';
 import Hawallian from '../images/categories/Hawaiian chicken salad.jpg';
