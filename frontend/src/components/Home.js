@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Home.css'; 
 import Footer from './footer.js';
 import Header from './header.js';
@@ -108,16 +109,18 @@ const popularItems = [
       </section>
 
   
-      <section className="recipe-categories">
+        <div className="recipe-categories">
         <h2>Travel the World with Your Taste Buds!</h2>
         <div className="categories">
           <div className="category">
+            <Link to={"/mexican"}>
             <img
               src={Mexican}
               alt="Mexican Recipes"
               className="category-image"
             />
             <h3>Mexican Recipes</h3>
+            </Link>
           </div>
           <div className="category">
             <img
@@ -136,7 +139,8 @@ const popularItems = [
             <h3>Thai Recipes</h3>
           </div>
         </div>
-      </section>
+        </div>
+     
 
 
      

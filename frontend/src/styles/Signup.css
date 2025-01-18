@@ -1,0 +1,118 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.Signup-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.Signup-form-container {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.brand-logo {
+  font-size: 3rem;
+  font-family: 'Lily Script One', cursive !important;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color:#66023C;
+}
+
+h2 {
+  margin: 0;
+  font-size:1.5rem;
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.Signup-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.Signup-form label {
+  font-size: 0.9rem;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.Signup-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-options a {
+  color: #66023C;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.sign-up-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #66023C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sign-up-button:hover {
+  background-color:#f5aefb;
+}
+
+.Signup-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+}
+
+.Signup-image img {
+  max-width: 100%;
+  height: auto;
+}
+.sign-up-link {
+  text-decoration: none; 
+  color: #007BFF; 
+  font-weight: bold;
+  transition: color 0.3s, text-decoration 0.3s; 
+}
+
+.sign-up-link:hover {
+  text-decoration: underline; 
+  color: #0056b3; 
+}
+
+.sign-up-link:active {
+  color: #003f7f; 
+}

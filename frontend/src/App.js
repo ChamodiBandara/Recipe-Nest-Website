@@ -19,6 +19,9 @@ import MexicanRice from './Recipepages/MexicanRice';
 import Hawaiian from './Recipepages/Hawaiin';
 import Pizza from './Recipepages/pizza';
 import MeatLoaf from './Recipepages/Meatloaf';
+import Signup from './components/Signup';
+import LoginPage from './components/login';
+
 
 import './App.css'; 
 import './index.css';
@@ -48,6 +51,9 @@ function App() {
         <Route path="/chicken-pizza" element={<Pizza/>}/>
         <Route path="/mexican-rice" element={<MexicanRice/>}/>
         <Route path="/chicken-teriyaki-noodles" element={<Noodles/>}/>
+        <Route path="/sign-up" element={<Signup/>}/>
+        <Route path="/login" element={<LoginPage/>}/>
+
 
        
       
