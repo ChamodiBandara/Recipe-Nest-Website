@@ -123,37 +123,42 @@ const popularItems = [
             </Link>
           </div>
           <div className="category">
+          <Link to={"/indian"}>
             <img
               src={indian}
               alt="Indian Recipes"
               className="category-image"
             />
             <h3>Indian Recipes</h3>
+            </Link>
           </div>
           <div className="category" >
+          <Link to={"/indian"}>
             <img
               src={Thai}
               alt="Thai Recipes"
               className="category-image"
             />
             <h3>Thai Recipes</h3>
+            </Link>
           </div>
         </div>
         </div>
-     
-
-
      
        <section className="explore-more">
         <h2 className="explore-more-title">Explore More</h2>
         <div className="explore-more-container">
           {exploreCategories.map((category, index) => (
+                
             <div className="explore-item" key={index}>
+              <Link to={"/recipes"}>
               <div
                 className="explore-image"
                 style={{ backgroundImage: `url(${category.image})` }}
               ></div>
+              
               <p className="explore-label">{category.label}</p>
+</Link>
             </div>
           ))}
         </div>
@@ -196,10 +201,10 @@ const popularItems = [
 <section className="more-categories-section">
         <h2>More Categories</h2>
         <div className="categories-container">
-          <div className="category-item"><img src={require('../images/morecategories/soup.jpg')} alt="Soup" /></div>
-          <div className="category-item"><img src={require('../images/morecategories/noodles.jpg')} alt="Noodles" /></div>
-          <div className="category-item"><img src={require('../images/morecategories/drinks.jpg')} alt="Drink" /></div>
-          <div className="category-item"><img src={require('../images/morecategories/sea.jpg')} alt="Seafood" /></div>
+          <div className="category-item"><Link to={'/dessert'}><img src={require('../images/Recipes/dessert.jpg')} alt="Soup" /></Link></div>
+          <div className="category-item"><Link to={'/dinner'}><img src={require('../images/morecategories/noodles.jpg')} alt="Noodles" /></Link></div>
+          <div className="category-item"><Link to={'/drinks'}><img src={require('../images/morecategories/drinks.jpg')} alt="Drink" /></Link></div>
+          <div className="category-item"><Link to={'/salad'}><img src={require('../images/Recipes/salad.jpg')} alt="Salad" /></Link></div>
         </div>
       </section>
 

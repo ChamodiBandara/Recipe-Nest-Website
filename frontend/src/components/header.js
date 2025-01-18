@@ -23,14 +23,18 @@ import { Link } from "react-router-dom";
       </nav>
        <div className="nav-icons">
          <button className="icon-button">
+         <Link to="/recipes">
            <i className="fas fa-search"></i>
+           </Link>
          </button>
          <button className="icon-button">
            <i className="fas fa-bookmark"></i>
          </button>
          <button className="icon-button">
-           <i className="fas fa-user"></i>
-         </button>
+  <Link to="/login">
+    <i className="fas fa-user"></i>
+  </Link>
+</button>
        </div>
        </div>
     

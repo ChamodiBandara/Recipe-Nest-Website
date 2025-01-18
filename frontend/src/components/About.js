@@ -3,6 +3,7 @@ import '../styles/About.css';
 import Header from './header.js';
 import Footer from './footer.js';
 import chef from '../images/About images/chef-smiling.jpg';
+import{Link} from 'react-router-dom';
 
 
 function About() {
@@ -13,7 +14,7 @@ function About() {
  
     <section className="about-section">
   <div className="about-container">
-    {/*  Text Section */}
+  
     <div className="about-text">
       <h2 className="about-title">Recipe Nest</h2>
       <p className="about-description">
@@ -21,7 +22,7 @@ function About() {
       </p>
     </div>
 
-    {/*  Image Section */}
+  
     <div className="about-image-container">
       <img
         src={require('../images/about.jpg')}
@@ -32,7 +33,7 @@ function About() {
   </div>
   
 </section>
- {/* Follow Us  */}
+ 
  <section className="follow-us-section">
   <div className="social-icons-container">
     <h3 className="follow-us-title">Follow us</h3>
@@ -56,10 +57,11 @@ function About() {
   </div>
   <div className="email-updates-container">
     <p>Sign up for Email Updates</p>
+     <Link to="/login">
     <button className="sign-up-button">Sign Up</button>
+    </Link>
   </div>
 </section>
-{/* what we offer  */}
 <section class="what-we-offer">
     <h2 class="offer-title">What We Offer ?</h2>
     <div class="offer-container">
@@ -91,7 +93,9 @@ function About() {
   <section className="recipe-call-to-action">
         <div className="recipe-call-to-action-container">
           <h2 className="recipe-call-to-action-text">Bring your recipes to the nest</h2>
+          <Link to={'/login'}>
           <button className="add-recipes-button">Add Recipes</button>
+          </Link>
         </div>
       </section>
     

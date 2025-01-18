@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from'react-router-dom';
 import '../styles/Recipe.css';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/header';
@@ -89,7 +90,9 @@ const categories = [
           />
           </div>
           <div className="signup-button">
-          <button className="subscription-button">Sign Up</button>
+             <Link to="/login">
+          <button className="subscription-button">Sign In</button>
+           </Link>
         </div>
       </section>
       <Footer/>
