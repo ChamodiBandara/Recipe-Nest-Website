@@ -58,7 +58,7 @@ function About() {
   <div className="email-updates-container">
     <p>Sign up for Email Updates</p>
      <Link to="/login">
-    <button className="sign-up-button">Sign Up</button>
+    <button className="sign-upbutton">Sign Up</button>
     </Link>
   </div>
 </section>
@@ -90,9 +90,10 @@ function About() {
       </div>
     </div>
   </section>
-  <section className="recipe-call-to-action">
-        <div className="recipe-call-to-action-container">
-          <h2 className="recipe-call-to-action-text">Bring your recipes to the nest</h2>
+  <section className="recipe-call">
+        <div className="recipe-call-container">
+          <h2 className="recipe-call-text">Bring your recipes to the nest</h2>
+          <div className="recipe-call-p">Bring Your Recipes to the Nest is your chance to share your culinary creativity! Add your unique recipe ideas, contribute new flavors, and inspire fellow food enthusiasts. By sharing your ideas with us, you’ll become a valued part of our community, helping to create a diverse and delicious recipe collection</div>
           <Link to={'/login'}>
           <button className="add-recipes-button">Add Recipes</button>
           </Link>

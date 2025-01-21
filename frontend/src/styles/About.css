@@ -65,8 +65,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
-  max-width: 1000px; 
+  width:100%;
   margin: 20px auto; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -87,7 +86,7 @@
 
 .social-icons {
   display: flex;
-  gap: 50px;
+  gap: 60px;
 }
 
 .social-icon {
@@ -116,35 +115,33 @@
 
 .email-updates-container {
   text-align: center;
-  
-  margin-right:100px;
+  margin-right:200px;
 }
 
 .email-updates-container p {
-  font-size: 18px;
+  font-size: 30px;
   color: white;
   margin-bottom: 20px;
-  font-family: K2D, sans-serif;
+  font-family: Arial, sans-serif;
   font-style:italic;
 }
 
-.sign-up-button {
-  padding: 10px 60px;
-  background-color: #FFD700;
-  color: #1F0112;
+.sign-upbutton {
+  padding: 10px 80px;
+  background-color: #FFFFFF;
   border: none;
-  border-radius: 5px;
-  font-family: 'Lily Script One', cursive !important;
+  border-radius: 3px;
+  font-family: 'K2D';
   font-size: 24px;
  text-align: center;
   font-style: italic;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s;
-}
+  transition: transform 0.3s ;
+} 
 
-.sign-up-button:hover {
-  background-color: #f3cee0;
+.sign-upbutton:hover {
+  background-color: #FFD700;
   transform: scale(1.05);
 }
 
@@ -160,7 +157,7 @@
 
 .offer-title {
   font-size: 3rem;
-  font-family:'K2D';
+  font-family:Arial;
   color:#66023C;
   margin-bottom: 20px;
   font-weight:bolder;
@@ -214,42 +211,53 @@
   line-height: 1.6;
 }
 
-.recipe-call-to-action {
+.recipe-call {
   background-color:#1F0112;
   background-size:1200px;
   background-position: center;
   color: #fff; 
   text-align: center;
   padding: 30px 0;
-  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  max-width: 800px; 
-  margin: 0 auto; 
+  width :800px;
+  height: auto;
+  margin:auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 
 
 
-.recipe-call-to-action-text {
-  font-size: 2.5rem;
+.recipe-call-text {
+  font-size: 1.2rem;
   margin-bottom: 20px;
   font-style: oblique;
   color:white;
 }
-
+.recipe-call-p{
+  text-align: center;
+  font-size:1rem;
+  margin:auto;
+  align-items: center;
+  max-width: 600px;
+  line-height: 1.8;
+  color:white;
+  margin-bottom: 20px;
+}
 .add-recipes-button {
-  background-color: #FFD700; 
+  background-color:#FFFFFF; 
   color: #000;
-  padding: 15px 30px;
+  padding: 10px 30px;
   border: none;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: oblique;
   font-weight: bold;
   cursor: pointer;
 }
 .add-recipes-button:hover{
-    background-color: #f3cee0;
+    background-color: #FFD700;
     transform: scale(1.05);
 }
 .find-recipes {
@@ -287,7 +295,7 @@
 
 .find-recipes-button {
   
-  background-color: #ffef3b; 
+  background-color:#FFD700; 
   color: black; 
   font-weight: bold;
   border: none;

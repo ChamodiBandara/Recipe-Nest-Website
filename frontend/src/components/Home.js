@@ -22,23 +22,23 @@ function Home() {
   const slogan = "Yaour Gateway to Delicious Creations!";
 
 
-  useEffect(() => {
-    let i = 0;
-    const typingInterval = 100; 
-    const typeWriter = () => {
-      if (i < slogan.length) {
-        setTypedText((prevText) => prevText + slogan.charAt(i)); 
-        i++;
-      } else {
-        clearInterval(intervalId); 
-      }
-    };
+  // useEffect(() => {
+  //   let i = 0;
+  //   const typingInterval = 100; 
+  //   const typeWriter = () => {
+  //     if (i < slogan.length) {
+  //       setTypedText((prevText) => prevText + slogan.charAt(i)); 
+  //       i++;
+  //     } else {
+  //       clearInterval(intervalId); 
+  //     }
+  //   };
 
-    const intervalId = setInterval(typeWriter, typingInterval); 
+  //   const intervalId = setInterval(typeWriter, typingInterval); 
 
-    return () => clearInterval(intervalId); 
+  //   return () => clearInterval(intervalId); 
 
-  }, []);
+  // }, []);
  
   const exploreCategories = [
     { label: 'Quick & Easy', image: quickEasy },
