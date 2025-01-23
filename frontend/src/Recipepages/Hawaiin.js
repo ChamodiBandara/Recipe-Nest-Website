@@ -11,8 +11,9 @@ function Hawaiian() {
 
 
   return (
-    <div className="recipe-description">
+<div>
       <Header />
+      <div className="recipe-description">
       <section className="recipe-details" ref={recipeRef}>
        <div className="topic-bar"> 
         <h1>Hawaiian Chicken Salad</h1>
@@ -88,6 +89,7 @@ function Hawaiian() {
           </ol>
         </div>
         </section>
+        </div>
         <section className='review-bg'>
   <div className='review-container'>
           
@@ -122,7 +124,7 @@ function Hawaiian() {
         </section>
 
      
-      
+       
       <Footer />
     </div>
   );

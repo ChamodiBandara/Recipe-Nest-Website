@@ -11,8 +11,9 @@ function Noodles() {
 
 
   return (
-    <div className="recipe-description">
+    <div>
       <Header />
+      <div className="recipe-description"></div>
       <section className="recipe-details" ref={recipeRef}>
        <div className="topic-bar"> 
         <h1>Chicken Teriyaki Noodles</h1>

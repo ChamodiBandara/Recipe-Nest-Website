@@ -21,8 +21,11 @@ import Pizza from './Recipepages/pizza';
 import MeatLoaf from './Recipepages/Meatloaf';
 import Signup from './components/Signup';
 import LoginPage from './components/login';
-
-
+import  StrawberryFudge from './Recipepages/strawberryfudge'
+import  HoneyCornBread from './Recipepages/Honeycorn'
+import CheeseBeef from './Recipepages/CheeseBeef';
+import Strawberrymango from './Recipepages/Strawberrymango.js';
+import IceCreamSundae from './Recipepages/Icecreamsundae';
 import './App.css'; 
 import './index.css';
 
@@ -53,9 +56,11 @@ function App() {
         <Route path="/chicken-teriyaki-noodles" element={<Noodles/>}/>
         <Route path="/sign-up" element={<Signup/>}/>
         <Route path="/login" element={<LoginPage/>}/>
-
-
-       
+        <Route path ="/strawberry-fudge" element={< StrawberryFudge />} />
+        <Route path ="/honey-corn-bread" element={< HoneyCornBread />} />
+        <Route path ="/cheese-beef-Wrap" element={< CheeseBeef />} />
+        <Route path ="/strawberry-mango-salsa" element={< Strawberrymango />} />
+        <Route path ="/ice-cream-sundae" element={< IceCreamSundae />} />
       
       </Routes>
       

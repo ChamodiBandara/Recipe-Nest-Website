@@ -11,8 +11,9 @@ function MexicanRice() {
 
 
   return (
-    <div className="recipe-description">
+    <div>
       <Header />
+      <div className="recipe-description">
       <section className="recipe-details" ref={recipeRef}>
        <div className="topic-bar"> 
         <h1>Mexican Rice</h1>
@@ -88,6 +89,7 @@ function MexicanRice() {
           </ol>
         </div>
         </section>
+        </div>
         <section className='review-bg'>
   <div className='review-container'>
           
@@ -123,7 +125,9 @@ function MexicanRice() {
 
      
       
-      <Footer />
+      
+
+    <Footer />
     </div>
   );
 }

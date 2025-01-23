@@ -11,7 +11,7 @@ function ChickenFriedRice() {
 
 
   return (
-    <div className="recipe-description">
+  <div>
       <Header />
       <section className="recipe-details" ref={recipeRef}>
        <div className="topic-bar"> 

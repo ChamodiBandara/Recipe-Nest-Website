@@ -53,26 +53,35 @@ const popularItems = [
   {
     image: require('../images/popular/Honey corn bread.jpg'), 
     title: 'Honey Corn Bread',
+    link: '/honey-corn-bread' ,
   },
   {
     image: require('../images/popular/strawberry fludge.jpg'),
     title: 'Strawberry Fudges',
+    link: '/strawberry-fudge' ,
   },
   {
     image: require('../images/popular/cheese beef.jpg'),
     title: 'Cheese Beef Wrap',
+    link: '/cheese-beef-Wrap' ,
+    
   },
   {
-    image: require('../images/popular/dabeli.jpg'),
-    title: 'Dabeli',
+    image: require('../images/categories/meatloaf.jpg'),
+    title: 'meatloaf',
+    link: '/meatloaf' ,
+  
   },
   {
     image: require('../images/popular/icecream.jpg'),
     title: 'Ice Cream Sundae',
+    link: '/ice-cream-sundae' ,
   },
   {
     image: require('../images/popular/strawberry mango.jpg'),
     title: 'Strawberry Mango Salsa',
+    link: '/strawberry-mango-salsa' ,
+    
   },
 ];
 
@@ -117,7 +126,7 @@ const popularItems = [
             <img
               src={Mexican}
               alt="Mexican Recipes"
-              className="category-image"
+              className="categoryimage"
             />
             <h3>Mexican Recipes</h3>
             </Link>
@@ -127,7 +136,7 @@ const popularItems = [
             <img
               src={indian}
               alt="Indian Recipes"
-              className="category-image"
+              className="categoryimage"
             />
             <h3>Indian Recipes</h3>
             </Link>
@@ -137,7 +146,7 @@ const popularItems = [
             <img
               src={Thai}
               alt="Thai Recipes"
-              className="category-image"
+              className="categoryimage"
             />
             <h3>Thai Recipes</h3>
             </Link>
@@ -169,8 +178,10 @@ const popularItems = [
         <div className="popular-grid">
           {popularItems.map((item, index) => (
             <div className="popular-item" key={index}>
+              <Link to={item.link}>
               <img src={item.image} alt={item.title} className="popular-image" />
               <p className="popular-title">{item.title}</p>
+              </Link>
             </div>
           ))}
         </div>
@@ -184,7 +195,9 @@ const popularItems = [
       <p className="about-description">
         Platform created to connect food lovers worldwide by sharing, discovering, and celebrating a diverse range of recipes. Born from a shared passion for cooking, our mission is to offer a space where creativity thrives, and culinary ideas are freely exchanged. We aim to provide a wide variety of recipes catering to different tastes and dietary needs, while building a vibrant community for both beginners and seasoned cooks. Led by a dedicated team of culinary experts and developers, Recipe Nest invites you to join us in this flavourful journey and share your unique recipes with the world.
       </p>
+      <Link to={"/about"}>
       <button className="learn-more-button">Learn More</button>
+      </Link>
     </div>
 
     <div className="about-image-container">

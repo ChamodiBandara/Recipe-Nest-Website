@@ -46,7 +46,7 @@ body {
     display: inline-block;
   } */
   
-  
+
   .search-bar {
     text-align: center;
     padding: 1.5rem;
@@ -71,6 +71,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-right:10px;
   }
   .search-button:hover {
     background-color: #faea0a;
@@ -107,15 +108,18 @@ body {
 
   
   .recipe-categories h2 {
+    margin-top: 20px;
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom:20px;
   }
   
   .categories {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 5rem;
+    margin-bottom:-50px;
   }
   
   .category {
@@ -124,22 +128,24 @@ body {
     width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+  
+  }
+  .categoryimage {
+    width:300px;
+    height:200px;
+    border-radius: 8px;
+    
   }
   .category:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(248, 246, 246, 0.2);
   }
 
-.category:hover .category-image {
+.category:hover .categoryimage {
   filter: brightness(0.5); 
 }
   
-  .category-image {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
+ 
   
   .category h3 {
     margin-top: 0.5rem;

@@ -5,7 +5,8 @@
     color:black;
     padding: 20px;
     text-align:justify;
-    background-color: #f8f9fa;
+    background-color: #faf8fa;
+    
   }
   
   .recipe-details {
@@ -16,6 +17,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding: 20px;
+    border: 3px solid#66023C;
   }
   
   h1 {
@@ -141,9 +143,11 @@
   {
     width:100%;
     background-color: #cbc9cb;
+    margin-top: 10px;
     padding:20px;
-    margin-top:10px;
-    margin-bottom: 10px;
+    
+ 
+    
   }
 
   .review-container{
@@ -152,10 +156,8 @@
     margin:auto;
     padding:20px;
     align-items:center;
-    margin-top: 10px;
-
     border-color:solid#290118;
-    margin-top: 10px;
+   
   }
   h3{
     font-size:2rem;

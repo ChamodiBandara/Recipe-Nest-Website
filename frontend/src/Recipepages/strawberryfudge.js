@@ -5,7 +5,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import '../Recipepages/Recipepage.css';
 
-function Pizza() {
+function StrawberryFudge() {
   const recipeRef = useRef(); 
 
 
@@ -13,11 +13,11 @@ function Pizza() {
   return (
     <div>
       <Header />
-    <div className="recipe-description">
-      
+      <div className="recipe-description">
+
       <section className="recipe-details" ref={recipeRef}>
        <div className="topic-bar"> 
-        <h1>Chicken Pizza</h1>
+        <h1>Strawberry Fudges</h1>
         </div>
         <div className="icon-bar2">
     <button className="icon-button2" title="Save">
@@ -34,8 +34,8 @@ function Pizza() {
     </button>
         </div>
         <img
-          src={require('../images/categories/Chicken pizza.jpg')}
-          alt="Chicken pizza"
+          src={require('../images/popular/strawberry fludge.jpg')}
+          alt="Strawberry Fudge"
         />
         <div className='Food-description'>
         <p>
@@ -94,7 +94,7 @@ function Pizza() {
         <section className='review-bg'>
   <div className='review-container'>
           
-            <h3>Chicken Pizza</h3>
+            <h3>Strawberry Fudges</h3>
            <h4> LEAVE A REPLY </h4>
            <div className= 'slogan'>Your email address will not be published.Required fields are marked*</div>
           <div className='slogan2'>Made it? Leave a review </div>
@@ -126,11 +126,11 @@ function Pizza() {
 
      
       
-      
-  
+    
+    
     <Footer />
     </div>
   );
 }
 
-export default Pizza;
+export default StrawberryFudge;
