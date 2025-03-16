@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Recipe_Nest_Desktop</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="b1.jpg" />
+    <None Remove="b10.jpg" />
+    <None Remove="b12.jpg" />
+    <None Remove="b13.jpg" />
+    <None Remove="b14.jpg" />
+    <None Remove="b3.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="b1.jpg" />
+    <Resource Include="b10.jpg" />
+    <Resource Include="b12.jpg" />
+    <Resource Include="b13.jpg" />
+    <Resource Include="b14.jpg" />
+    <Resource Include="b3.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,71 @@
+﻿<Window x:Class="RecipeNest.RecipeManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Recipe Management"
+        Height="450"
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#FF1E1E1E">
+    <!-- Dark gray background -->
+
+    <StackPanel Margin="20">
+        <!-- Title -->
+        <TextBlock Text="Recipe Management"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Margin="0,0,0,20"
+                   HorizontalAlignment="Center"/>
+
+        <!-- List of Recipes -->
+        <ListView x:Name="lstRecipes"
+                  Background="White"
+                  BorderBrush="Gray"
+                  Height="250"
+                  Margin="0,0,0,20">
+            <ListView.View>
+                <GridView>
+                    <!-- Item ID Column -->
+                    <GridViewColumn Header="Item ID" DisplayMemberBinding="{Binding ItemID}" Width="100"/>
+                    <!-- Item Name Column -->
+                    <GridViewColumn Header="Item Name" DisplayMemberBinding="{Binding ItemName}" Width="200"/>
+                    <!-- Date Column -->
+                    <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date}" Width="150"/>
+                    <!-- Item Category Column -->
+                    <GridViewColumn Header="Category" DisplayMemberBinding="{Binding ItemCategory}" Width="150"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <!-- Buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Add Recipe"
+                    FontSize="16"
+                    Padding="10"
+                    Background="#FF4CAF50" 
+                Foreground="White"
+                    BorderBrush="Transparent"
+                    Click="btnAddRecipe_Click"
+                    Margin="0,0,10,0"
+                    Width="120"/>
+                <Button Content="Delete Recipe"
+                    FontSize="16"
+                    Padding="10"
+                    Background="#FFF44336" 
+                    Foreground="White"
+                    BorderBrush="Transparent"
+                    Click="btnDeleteRecipe_Click"
+                    Margin="0,0,10,0"
+                    Width="120"/>
+                    <Button Content="Refresh"
+                    FontSize="16"
+                    Padding="10"
+                    Background="#FF2196F3" 
+                        Foreground="White"
+                    BorderBrush="Transparent"
+                    Click="btnRefresh_Click"
+                    Width="120"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
