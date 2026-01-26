@@ -111,22 +111,10 @@ function MexicanRice() {
             <div className="review-bar3">
               <input type="text"
               className='Email'/>
-              </div>
-              
-                
-              
+              </div>              
                 <button className='Submit-button'>Post comment</button>
-            
-          
-              
-
         </div>
         </section>
-
-     
-      
-      
-
     <Footer />
     </div>
   );

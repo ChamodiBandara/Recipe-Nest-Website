@@ -23,7 +23,7 @@ function Thai() {
   ];
 
   return (
-    <div className="thai-page">
+    <div className="Recipe-page">
         <Header/>
         <section>
       <h1>Thai Recipes</h1>

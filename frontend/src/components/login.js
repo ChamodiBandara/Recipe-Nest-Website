@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
-import '../styles/login.css'; 
-import image1 from '../images/background4.jpg';
-import { useNavigate } from 'react-router-dom';
-import { Link} from 'react-router-dom';
+import React, { useState } from "react";
+import "../styles/login.css";
+import image1 from "../images/background4.jpg";
+import { useNavigate, Link } from "react-router-dom";
 
 function LoginPage() {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-  });
+  const [formData, setFormData] = useState({ email: "", password: "" });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,33 +13,29 @@ function LoginPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const { email, password } = formData;
 
     try {
-      const response = await fetch('http://localhost:3001/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+      const response = await fetch("http://localhost:3001/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
 
       const data = await response.json();
 
       if (response.ok) {
-        alert('Login successful!');
-        // Save user data or token to localStorage
-        localStorage.setItem('user', JSON.stringify(data.user));
+        alert("Login successful!");
+        localStorage.setItem("token", data.token); //  IMPORTANT
+        localStorage.setItem("user", JSON.stringify(data.user));
 
-        // Navigate to the home page or dashboard
-        navigate('/');
+        navigate("/ "); 
       } else {
-        alert(data.error || 'Invalid login credentials.');
+        alert(data.error || "Invalid login credentials.");
       }
     } catch (err) {
-      console.error('Error during login:', err);
-      alert('An error occurred. Please try again later.');
+      console.error("Error during login:", err);
+      alert("An error occurred. Please try again later.");
     }
   };
 
@@ -53,6 +45,7 @@ function LoginPage() {
         <div className="brand-logo">Recipe Nest</div>
         <h2>Welcome Back</h2>
         <p>Sign in with your email address and password.</p>
+
         <form className="login-form" onSubmit={handleSubmit}>
           <label>Email Address</label>
           <input
@@ -81,10 +74,11 @@ function LoginPage() {
             <a href="#">Forgot Password?</a>
           </div>
 
-          <button type="submit" className="sign-in-button">Sign In</button>
+          <button type="submit" className="sign-in-button">Login</button>
         </form>
+
         <p>
-          Don't have an account?{' '}
+          Don't have an account?{" "}
           <Link to="/sign-up" className="sign-up-link">Sign Up</Link>
         </p>
       </div>

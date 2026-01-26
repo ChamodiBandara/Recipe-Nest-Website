@@ -1,0 +1,82 @@
+.rn-page{
+  min-height: 100vh;
+  padding: 40px 18px;
+  background: radial-gradient(circle at top, #ffeaf3 0%, #f7dce8 55%, #f3d3e1 100%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.rn-card{
+  width: 100%;
+  max-width: 920px;
+  border-radius: 18px;
+  padding: 28px 26px;
+  background: linear-gradient(180deg, rgba(40,0,20,0.85), rgba(20,0,10,0.92));
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.rn-title{
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+  margin: 0 0 6px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.rn-subtitle{
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: rgba(255,255,255,0.85);
+  font-weight: 300;
+}
+
+.rn-form{
+  display: grid;
+  gap: 14px;
+}
+
+.rn-row label{
+  display: block;
+  color: rgba(255,255,255,0.9);
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.rn-row input, .rn-row textarea{
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.08);
+  color: white;
+  padding: 12px 12px;
+  outline: none;
+}
+
+.rn-row input::placeholder, .rn-row textarea::placeholder{
+  color: rgba(255,255,255,0.55);
+}
+
+.rn-msg{
+  color: #fff;
+  background: rgba(255,255,255,0.12);
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.rn-btn{
+  margin-top: 6px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: #ffffff;
+  color: #2a0015;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+
+.rn-btn:hover{ transform: translateY(-1px); }

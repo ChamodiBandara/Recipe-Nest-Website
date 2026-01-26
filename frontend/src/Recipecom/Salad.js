@@ -26,7 +26,7 @@ function Salad() {
     <div className="salad-page">
         <Header/>
         <section>
-      <h1>Salad Recipes</h1>
+        <h1 style={{ color: 'black', display: 'block' }}>Salad Recipes</h1>
        <div className="recipe-list">
           {saladRecipes.map((recipe, index) => (
             <div

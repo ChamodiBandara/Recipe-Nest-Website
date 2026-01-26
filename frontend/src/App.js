@@ -28,6 +28,9 @@ import Strawberrymango from './Recipepages/Strawberrymango.js';
 import IceCreamSundae from './Recipepages/Icecreamsundae';
 import './App.css'; 
 import './index.css';
+import AddRecipe from "./pages/AddRecipe";
+import MyRecipes from "./pages/MyRecipes";
+import EditRecipe from "./pages/EditRecipe";
 
 function App() {
   return (
@@ -61,6 +64,9 @@ function App() {
         <Route path ="/cheese-beef-Wrap" element={< CheeseBeef />} />
         <Route path ="/strawberry-mango-salsa" element={< Strawberrymango />} />
         <Route path ="/ice-cream-sundae" element={< IceCreamSundae />} />
+        <Route path="/add-recipe" element={<AddRecipe />} />
+        <Route path="/my-recipes" element={<MyRecipes />} />
+        <Route path="/edit-recipe/:id" element={<EditRecipe />} />
       
       </Routes>
       

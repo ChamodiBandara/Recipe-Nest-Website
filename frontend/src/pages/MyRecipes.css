@@ -1,0 +1,99 @@
+.mr-page{
+  min-height: 100vh;
+  padding: 36px 18px;
+  background: radial-gradient(circle at top, #fee1ed 0%, #f8f0f3 55%, #f3d3e1 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+.mr-wrap{ max-width: 1100px; margin: 0 auto; }
+
+.mr-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.mr-title{
+  font-family: "Pacifico", cursive;
+  font-size: 38px;
+  margin: 0;
+  color: #2a0015;
+}
+
+.mr-btn{
+  border: none;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: linear-gradient(180deg, #2a0015, #120008);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mr-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.mr-card{
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.mr-img{
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mr-imgPlaceholder{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(180deg, rgba(40,0,20,0.85), rgba(20,0,10,0.92));
+  color: #fff;
+  font-family: "Pacifico", cursive;
+  font-size: 26px;
+}
+
+.mr-body{ padding: 14px; }
+
+.mr-body h3{ margin: 0 0 6px 0; color: #2a0015; }
+.mr-body p{ margin: 0 0 12px 0; color: rgba(42,0,21,0.75); font-size: 13px; }
+
+.mr-actions{ display:flex; gap:10px; }
+.mr-action{
+  flex: 1;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #fff;
+  color: #2a0015;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid rgba(42,0,21,0.15);
+}
+
+.mr-action.danger{
+  background: #2a0015;
+  color: #fff;
+}
+
+.mr-empty{
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(0,0,0,0.06);
+}

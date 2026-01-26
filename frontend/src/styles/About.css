@@ -158,7 +158,7 @@
 .offer-title {
   font-size: 3rem;
   font-family:Arial;
-  color:#66023C;
+  color: #66023C;
   margin-bottom: 20px;
   font-weight:bolder;
 }
@@ -261,50 +261,67 @@
     transform: scale(1.05);
 }
 .find-recipes {
-  background-color: #f4eff4; 
-  padding: 20px;
+  background-color: #f4eff4;
+  padding: 30px 20px;
   border-radius: 8px;
   text-align: center;
   margin: 30px auto;
-  width: 100%; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* TITLE */
 .find-recipes-title {
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 3000px;
-  color:black; 
-  margin-bottom: 15px;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff4b8;
+  margin-bottom: 10px;
+  text-shadow:
+    0 2px 6px rgba(255, 220, 120, 0.6),
+    0 0 12px rgba(255, 215, 0, 0.4);
 }
 
+/* CONTAINER */
 .find-recipes-container {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
 }
 
-.find-recipes-input {
-  width: 50%;
-  padding: 10px;
-  border: 3px solid #4c2a4c;
-  border-radius: 4px;
-  font-size: 14px;
+/* DESCRIPTION TEXT */
+.find-recipes-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.9;
+  letter-spacing: 0.6px;
+  max-width: 600px;
+  line-height: 1.5;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* BUTTON */
 .find-recipes-button {
-  
-  background-color:#FFD700; 
-  color: black; 
-  font-weight: bold;
+  background-color: #FFD700;
+  color: #2b0a1f;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
   border: none;
-  border-radius: 20px;
-  padding: 10px 30px;
+  border-radius: 22px;
+  padding: 12px 36px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.6);
 }
 
 .find-recipes-button:hover {
-  background-color: #fdd835; 
+  background-color: #fdd835;
+  box-shadow: 0 6px 18px rgba(255, 215, 0, 0.9);
+  transform: translateY(-2px);
 }
