@@ -42,7 +42,7 @@ Recipe Nest is a full-stack web application that allows users to explore, create
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/YOUR-USERNAME/Recipe-Nest-Website.git
+git clone https://github.com/ChamodiBandara/Recipe-Nest-Website.git
 ```
 
 ### 2. Install dependencies
