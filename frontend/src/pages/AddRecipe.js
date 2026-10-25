@@ -27,7 +27,7 @@ export default function AddRecipe() {
       setMsg("✅ Recipe added!");
       setTimeout(() => navigate("/my-recipes"), 800);
     } else {
-      setMsg(data?.message || "Something went wrong");
+      setMsg(data?.error || data?.message || "Something went wrong");
     }
   }
 

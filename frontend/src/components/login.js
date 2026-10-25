@@ -29,7 +29,7 @@ function LoginPage() {
         localStorage.setItem("token", data.token); //  IMPORTANT
         localStorage.setItem("user", JSON.stringify(data.user));
 
-        navigate("/ "); 
+        navigate("/");
       } else {
         alert(data.error || "Invalid login credentials.");
       }
